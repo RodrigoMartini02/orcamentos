@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Projeto</title>
+    <link rel="stylesheet" href="Sistema Ambiental.css">
+    <link rel="stylesheet" href="Sistema GEO.css">
+    <link rel="stylesheet" href="Sistema Whats.css">
+    <link rel="stylesheet" href="Sistema Tributário.css">
+    <link rel="stylesheet" href="Sistema Cadastro.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+
+    <div class="button-wrapper">
+        <button class="btnSistema" data-target="containerAmbiental">Sistema Ambiental</button>
+        <button class="btnSistema" data-target="containerGEO">Sistema GEO</button>
+        <button class="btnSistema" data-target="containerWhats">Sistema Whats</button>
+        <!-- <button class="btnSistema" data-target="containerTributario">Sistema Tributário</button>-->
+        <button class="btnSistema" data-target="containerCadastro">Higienização Cadastral</button>
+    </div>
+
+
+
+
+<!-- Container do Sistema Ambiental -->
+<div class="container-wrapper">
+    <div id="containerAmbiental" class="container" style="display: none;">
+        <h1>Orçamento Sistema Ambiental</h1>
+
+        <!-- Formulário de cálculo -->
+        <form class="calc-form" data-tipo="Ambiental">
+            <!-- Grupo de Município e População lado a lado -->
+            <div class="form-group flex-group">
+                <div class="input-group">
+                    <label for="municipioAmbiental">Município</label>
+                    <input type="text" id="municipioAmbiental" class="municipio" required placeholder="Informe o nome do município">
+                </div>
+                <div class="input-group">
+                    <label for="populationAmbiental">População</label>
+                    <input type="number" id="populationAmbiental" class="population" required placeholder="Informe a população">
+                </div>
+            </div>
+
+            <!-- Grupo de Horas Técnicas e Valor Horas Técnicas lado a lado -->
+            <div class="form-group flex-group">
+                <div class="input-group">
+                    <label for="horasTecnicasInput">Horas Técnicas</label>
+                    <input type="number" class="horas-tecnicas" id="horasTecnicasInput" placeholder="Insira a quantidade de horas">
+                </div>
+                <div class="input-group">
+                    <label for="valorHorasTecnicasInput">Valor Horas Técnicas</label>
+                    <input type="number" class="valor-horas-tecnicas" id="valorHorasTecnicasInput" placeholder="Insira o valor por hora técnica">
+                </div>
+            </div>
+        </form>
+
+        <!-- Container de resultados -->
+        <div class="result-container">
+            <p>População: <span class="pop-result">-</span></p>
+            <p>Custo Mensal: <span class="monthly-cost">-</span></p>
+            <p>Custo Anual: <span class="annual-cost">-</span></p>
+            <p>Custo de Implantação: <span class="implementation-cost">-</span></p>
+            <p>Total Horas Técnicas: <span class="horas-tecnicas-result">-</span></p> <!-- Exibe o valor total das horas técnicas -->
+        </div>
+
+        <!-- Botões -->
+        <div class="button-group">
+            <button id="calcularButtonAmbiental" type="button">Calcular</button>
+            <button class="generate-pdf" type="button" disabled>Baixar Orçamento</button> <!-- O botão começa desabilitado -->
+            <button class="btnSistema btn-inicio" type="button">Início</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Container do Sistema GEO -->
+<div class="container-wrapper">
+    <div id="containerGEO" class="container" style="display: none;">
+        <h1>Orçamento Sistema GEO</h1>
+
+        <!-- Formulário de cálculo -->
+        <form class="calc-form" data-tipo="GEO">
+            <!-- Grupo de Município e População lado a lado -->
+            <div class="form-group flex-group">
+                <div class="input-group">
+                    <label for="municipioGEO">Município</label>
+                    <input type="text" id="municipioGEO" class="municipio" required placeholder="Informe o nome do município">
+                </div>
+                <div class="input-group">
+                    <label for="populationGEO">População</label>
+                    <input type="number" id="populationGEO" class="population" required placeholder="Informe a população">
+                </div>
+            </div>
+
+            <!-- Grupo de Horas Técnicas e Valor Horas Técnicas lado a lado -->
+            <div class="form-group flex-group">
+                <div class="input-group">
+                    <label for="horasTecnicasInputGEO">Horas Técnicas</label>
+                    <input type="number" class="horas-tecnicas" id="horasTecnicasInputGEO" placeholder="Insira a quantidade de horas">
+                </div>
+                <div class="input-group">
+                    <label for="valorHorasTecnicasInputGEO">Valor Horas Técnicas</label>
+                    <input type="number" class="valor-horas-tecnicas" id="valorHorasTecnicasInputGEO" placeholder="Insira o valor por hora técnica">
+                </div>
+            </div>
+        </form>
+
+        <!-- Container de resultados -->
+        <div class="result-container">
+            <p>População: <span class="pop-result">-</span></p>
+            <p>Custo Mensal: <span class="monthly-cost">-</span></p>
+            <p>Custo Anual: <span class="annual-cost">-</span></p>
+            <p>Custo de Implantação: <span class="implementation-cost">-</span></p>
+            <p>Total Horas Técnicas: <span class="horas-tecnicas-result">-</span></p> <!-- Exibe o valor total das horas técnicas -->
+        </div>
+
+        <!-- Botões -->
+        <div class="button-group">
+            <button id="calcularButtonGEO" type="button">Calcular</button>
+            <button class="generate-pdf" type="button" disabled>Baixar Orçamento</button> <!-- O botão começa desabilitado -->
+            <button class="btnSistema btn-inicio" type="button">Início</button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Container do Sistema Whats -->
+<div class="container-wrapper">
+    <div id="containerWhats" class="container" style="display: none;">
+        <h1>Orçamento Sistema Whats</h1>
+
+        <!-- Formulário de cálculo -->
+        <form class="calc-form" data-tipo="Whats">
+            <!-- Grupo de Município e População lado a lado -->
+            <div class="form-group flex-group">
+                <div class="input-group">
+                    <label for="municipioWhats">Município</label>
+                    <input type="text" id="municipioWhats" class="municipio" required placeholder="Informe o nome do município">
+                </div>
+                <div class="input-group">
+                    <label for="populationWhats">População</label>
+                    <input type="number" id="populationWhats" class="population" required placeholder="Informe a população">
+                </div>
+            </div>
+
+            <!-- Grupo de Horas Técnicas e Valor Horas Técnicas lado a lado -->
+            <div class="form-group flex-group">
+                <div class="input-group">
+                    <label for="horasTecnicasInputWhats">Horas Técnicas</label>
+                    <input type="number" class="horas-tecnicas" id="horasTecnicasInputWhats" placeholder="Insira a quantidade de horas">
+                </div>
+                <div class="input-group">
+                    <label for="valorHorasTecnicasInputWhats">Valor Horas Técnicas</label>
+                    <input type="number" class="valor-horas-tecnicas" id="valorHorasTecnicasInputWhats" placeholder="Insira o valor por hora técnica">
+                </div>
+            </div>
+        </form>
+
+        <!-- Container de resultados -->
+        <div class="result-container">
+            <p>População: <span class="pop-result">-</span></p>
+            <p>Custo Mensal: <span class="monthly-cost">-</span></p>
+            <p>Custo Anual: <span class="annual-cost">-</span></p>
+            <p>Custo de Implantação: <span class="implementation-cost">-</span></p>
+            <p>Total Horas Técnicas: <span class="horas-tecnicas-result">-</span></p> <!-- Exibe o valor total das horas técnicas -->
+        </div>
+
+        <!-- Botões -->
+        <div class="button-group">
+            <button id="calcularButtonWhats" type="button">Calcular</button>
+            <button class="generate-pdf" type="button" disabled>Baixar Orçamento</button> <!-- O botão começa desabilitado -->
+            <button class="btnSistema btn-inicio" type="button">Início</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Container de Cadastro e Higienização Cadastral -->
+<div class="container-wrapper">
+    <div id="containerCadastro" class="container">
+        <h2>Cadastro e Higienização Cadastral</h2>
+
+        <div class="form-group">
+            <label for="municipio">Nome do Município:</label>
+            <input type="text" id="municipio" placeholder="Informe o nome do município">
+        </div>
+
+        <div class="form-group">
+            <label for="cpfQuantidade">Quantidade de CPFs:</label>
+            <input type="number" id="cpfQuantidade" min="0" placeholder="Informe a quantidade de CPFs">
+        </div>
+
+        <div class="form-group">
+            <label for="cpfValor">Valor por unidade de CPF:</label>
+            <input type="number" id="cpfValor" step="0.01" min="0" placeholder="Informe o valor por CPF">
+        </div>
+
+        <div class="form-group">
+            <!-- Div de resultados -->
+            <div class="result-container" id="resultado">
+                <!-- Aqui serão exibidos os resultados após o cálculo -->
+            </div>
+        </div>
+
+        <!-- Grupo de botões alinhados lado a lado -->
+        <div class="button-group">
+            <button id="calcularButton">Calcular</button>
+            <button id="baixarOrcamentoButton" class="generate-pdf">Baixar Orçamento</button>
+            <button class="btnSistema btn-inicio" data-target="inicial">Início</button>
+        </div>
+    </div>
+</div>
+
+
+
+   <!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="Ambiental.js"></script>
+
+<script src="GEO.js"></script>
+<!--<script src="tributario.js"></script>-->
+<script src="Whats.js"></script>
+<script src="pdfAmbiental.js"></script>
+
+<script src="pdfGEO.js"></script>
+<script src="pdfWhats.js"></script>
+<script src="Cadastro.js"></script>
+<script src="pdfCadastro.js"></script>
+
+</body>
+</html>

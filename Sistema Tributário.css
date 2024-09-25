@@ -1,0 +1,151 @@
+/* Estilos para o Container do Sistema Tributário */
+#containerTributario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilos para o container principal dentro do Sistema Tributário */
+#containerTributario .container {
+    width: 85%;
+    max-width: 900px;
+    margin-bottom: 30px;
+}
+
+/* Estilos para o formulário de cálculo dentro do Sistema Tributário */
+#containerTributario .calc-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo dos labels dentro do formulário do Sistema Tributário */
+#containerTributario .calc-form label {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #444;
+    font-weight: 600;
+}
+
+/* Estilo dos inputs e botões dentro do formulário do Sistema Tributário */
+#containerTributario .calc-form input,
+#containerTributario .calc-form button {
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Estilo dos inputs */
+#containerTributario .calc-form input {
+    width: 100%;
+}
+
+/* Estilo dos botões */
+#containerTributario .calc-form button {
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#containerTributario .calc-form button:hover {
+    transform: scale(1.02);
+}
+
+/* Estilos para o container de resultados dentro do Sistema Tributário */
+#containerTributario .result-container {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border: 1px solid #4CAF50;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #4CAF50;
+}
+
+/* Estilos para a tabela de descrição dentro do Sistema Tributário */
+#containerTributario .descricao-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+#containerTributario .descricao-table th,
+#containerTributario .descricao-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#containerTributario .descricao-table th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+}
+
+/* Estilos para os botões de ação dentro do Sistema Tributário */
+#containerTributario .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+/* Estilo do botão gerar PDF dentro do Sistema Tributário */
+#containerTributario .generate-pdf {
+    padding: 12px 22px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#containerTributario .generate-pdf:hover {
+    background-color: #4cae4c;
+    transform: scale(1.02);
+}
+
+/* Estilo do botão de início dentro do Sistema Tributário */
+#containerTributario .btn-inicio {
+    padding: 12px 22px;
+    background-color: #0275d8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#containerTributario .btn-inicio:hover {
+    background-color: #025aa5;
+    transform: scale(1.02);
+}
+
+.pdf-body h1,
+.pdf-body h2,
+.pdf-body p,
+.pdf-body table {
+    font-size: 14px; /* Ajusta o tamanho da fonte para 12px */
+}
+
+.pdf-body .pdf-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pdf-body .pdf-table th,
+.pdf-body .pdf-table td {
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: left;
+}
+
+.pdf-body .pdf-table th {
+    background-color: #f2f2f2;
+}
+
+.large-margin-bottom {
+    margin-bottom: 40px; /* Ajuste o valor conforme necessário */
+}

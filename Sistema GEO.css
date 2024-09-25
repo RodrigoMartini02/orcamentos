@@ -1,0 +1,137 @@
+/* Estilos para o Container do Sistema GEO */
+#containerGEO {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+#containerGEO h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Flexbox para posicionar os campos lado a lado */
+#containerGEO .flex-group {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+    justify-content: space-between;
+    gap: 20px; /* Adiciona espaçamento horizontal entre os inputs */
+}
+
+/* Adiciona margem lateral para separar os campos */
+#containerGEO .input-group {
+    flex: 1 1 45%; /* Controla a largura dos campos, garantindo que não se sobreponham e tenham 45% de largura */
+    min-width: 350px; /* Define uma largura mínima para os inputs */
+}
+
+/* Variáveis customizáveis para altura e largura dos inputs */
+:root {
+    --input-height: 35px; /* Altura padrão dos inputs */
+    --input-width: 150%;  /* Largura padrão dos inputs */
+    --input-margin-bottom: 20px; /* Distância vertical entre os inputs */
+}
+
+#containerGEO .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Ajuste da largura e altura dos inputs */
+#containerGEO .form-group input {
+    width: calc(var(--input-width) / 2); /* Limita a largura para que não ultrapasse o container */
+    padding: 10px;
+    margin-bottom: var(--input-margin-bottom); /* Espaçamento vertical entre os inputs */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    height: var(--input-height); /* Altura customizável dos inputs */
+}
+
+/* Estilo do container de resultados */
+#containerGEO .result-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #4CAF50;
+    display: none;
+}
+
+/* Botões lado a lado */
+#containerGEO .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#containerGEO .button-group button {
+    flex: 1;
+    margin-right: 10px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#containerGEO .button-group button:last-child {
+    margin-right: 0;
+}
+
+#containerGEO #calcularButtonGEO {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#containerGEO #calcularButtonGEO:hover {
+    background-color: #45a049;
+}
+
+#containerGEO .generate-pdf {
+    background-color: #2196F3;
+    color: white;
+}
+
+#containerGEO .generate-pdf:hover {
+    background-color: #1e88e5;
+}
+
+#containerGEO .btn-inicio {
+    background-color: #007bff;
+    color: white;
+}
+
+#containerGEO .btn-inicio:hover {
+    background-color: #0056b3;
+}
+
+/* Alinhamento apenas para container GEO */
+#containerGEO .right-align {
+    text-align: right;
+}
+
+#containerGEO .center-align {
+    text-align: center;
+}
+
+/* Estilo do PDF */
+#containerGEO .pdf-body {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}

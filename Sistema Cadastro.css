@@ -1,0 +1,126 @@
+/* Estilos para o Container Cadastro e Higienização Cadastral */
+#containerCadastro {
+    display: none; /* Inicialmente oculto, exibido ao clicar no botão */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente os itens */
+}
+
+/* Estilo do título dentro do container */
+#containerCadastro h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Estilos para os grupos de formulário dentro do container */
+#containerCadastro .form-group {
+    margin-bottom: 15px;
+    width: 100%; /* Ajusta a largura dos grupos de formulário */
+}
+
+/* Estilo dos labels dentro dos grupos de formulário */
+#containerCadastro .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Estilo dos inputs dentro dos grupos de formulário */
+#containerCadastro .form-group input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Estilos para os botões dentro do container */
+#containerCadastro button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Estilo do botão Calcular */
+#containerCadastro #calcularButton {
+    background-color: #4CAF50;
+}
+
+#containerCadastro #calcularButton:hover {
+    background-color: #45a049;
+}
+
+/* Estilo do botão Baixar Orçamento */
+#containerCadastro #baixarOrcamentoButton {
+    background-color: #2196F3;
+}
+
+#containerCadastro #baixarOrcamentoButton:hover {
+    background-color: #1e88e5;
+}
+
+/* Estilo do botão Início */
+#containerCadastro .btn-inicio {
+    background-color: #f44336;
+}
+
+#containerCadastro .btn-inicio:hover {
+    background-color: #d32f2f;
+}
+
+/* Estilo do container de resultados dentro do container */
+#containerCadastro .result-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #4CAF50;
+    display: none; /* Inicialmente escondido */
+}
+
+/* Agrupa e centraliza botões */
+.button-group {
+    display: flex; /* Alinha os botões em uma linha */
+    justify-content: space-between; /* Distribui espaço entre os botões */
+    gap: 10px; /* Espaço entre os botões */
+    margin-top: 20px; /* Espaço acima do grupo de botões */
+}
+
+.button-group button {
+    flex: 1; /* Faz os botões ocuparem o mesmo espaço */
+    padding: 12px; /* Ajusta o padding dos botões */
+    max-width: none; /* Remove a largura máxima */
+}
+
+.right-align {
+    text-align: right;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.pdf-body {
+    font-size: 12px; /* Adjust to make it readable */
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}

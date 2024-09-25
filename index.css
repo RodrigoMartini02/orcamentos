@@ -1,0 +1,397 @@
+
+
+/* Estilos CSS personalizados */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.button-wrapper {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btnSistema {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #17a2b8;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btnSistema:hover {
+    background-color: #138496;
+    transform: scale(1.05);
+}
+
+.container-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto; /* Margem superior e inferior de 20px e centraliza horizontalmente */
+    width: 80%; /* Largura do container */
+    max-width: 800px; /* Largura máxima do container */
+    transition: transform 0.3s ease;
+}
+
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.calc-form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="number"], input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.result-container {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.result-container p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.discounted-monthly-cost-container,
+.discounted-annual-cost-container {
+    display: none;
+}
+
+/* Estilos para a tabela dentro do container */
+.container .table-container {
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+.container .table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+.container .table th,
+.container .table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+.container .table th {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container .table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.container .table tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+.container .table td {
+    color: #555555;
+}
+
+.container .table td:first-child {
+    font-weight: bold;
+}
+
+/* Estilo para links dentro da tabela */
+.container .table a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.container .table a:hover {
+    color: #0056b3;
+}
+
+
+/* Estilos para a tabela dentro do container */
+.container .table-container {
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+.container .table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+.container .table th,
+.container .table td {
+    padding: 10px 12px; /* Reduzindo o padding das células */
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+    font-size: 14px; /* Reduzindo o tamanho da fonte */
+}
+
+.container .table th {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container .table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.container .table tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+.container .table td {
+    color: #555555;
+}
+
+.container .table td:first-child {
+    font-weight: bold;
+}
+
+/* Estilo para links dentro da tabela */
+.container .table a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.container .table a:hover {
+    color: #b3005a;
+}
+
+
+.descricao-table tfoot td {
+    text-align: right;
+}
+
+
+
+
+/* Estilos CSS personalizados */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.button-wrapper {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btnSistema {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #17a2b8;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btnSistema:hover {
+    background-color: #138496;
+    transform: scale(1.05);
+}
+
+.container-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 600px;
+    display: none; /* Todos os containers começam ocultos */
+}
+
+.container.active {
+    display: block; /* Exibe o container ativo */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.calc-form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="number"], input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.result-container {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.result-container p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.discounted-monthly-cost-container,
+.discounted-annual-cost-container {
+    display: none;
+}
+
+body {
+    background-image: url('images/fundo.png');
+    background-size: cover; /* Faz com que a imagem cubra toda a área visível */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    height: 100vh; /* Faz o body ocupar 100% da altura da janela */
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove os paddings padrão */
+}
