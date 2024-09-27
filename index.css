@@ -9,6 +9,8 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #f8f9fa;
+    min-height: 100vh; /* Garante que o corpo tenha pelo menos 100% da altura da tela */
+    font-size: 10px; /* Define o tamanho da fonte global menor */
 }
 
 .button-wrapper {
@@ -17,12 +19,12 @@ body {
 }
 
 .btnSistema {
-    padding: 20px 60px; /* Mantém o tamanho aumentado dos botões */
+    padding: 20px 60px;
     border: none;
     border-radius: 4px;
     background-color: #17a2b8;
     color: white;
-    font-size: 20px; /* Aumenta o tamanho da fonte */
+    font-size: 16px; /* Tamanho de fonte ajustado */
     cursor: pointer;
     margin: 5px;
     transition: background-color 0.3s, transform 0.3s;
@@ -39,6 +41,7 @@ body {
     align-items: center;
     width: 100%;
     max-width: 1200px;
+    flex: 1; /* Faz o container ocupar o espaço disponível */
 }
 
 .container {
@@ -51,6 +54,10 @@ body {
     width: 80%;
     max-width: 800px;
     transition: transform 0.3s ease;
+    min-height: 400px; /* Altura mínima para manter os containers na mesma posição */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
 }
 
 .container:hover {
@@ -60,7 +67,7 @@ body {
 
 h1 {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 18px; /* Diminuindo o tamanho da fonte do título h1 */
     color: #333;
 }
 
@@ -74,6 +81,7 @@ h1 {
 label {
     display: block;
     margin-bottom: 8px;
+    font-size: 12px; /* Tamanho de fonte ajustado para os rótulos */
     font-weight: bold;
 }
 
@@ -83,6 +91,7 @@ input[type="number"], input[type="text"] {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 12px; /* Tamanho de fonte ajustado para os inputs */
 }
 
 button {
@@ -91,7 +100,7 @@ button {
     border-radius: 4px;
     background-color: #007BFF;
     color: white;
-    font-size: 16px;
+    font-size: 14px; /* Tamanho de fonte ajustado para os botões */
     cursor: pointer;
     margin: 5px;
     transition: background-color 0.3s, transform 0.3s;
@@ -103,7 +112,7 @@ button:hover {
 }
 
 .result-container {
-    font-size: 18px;
+    font-size: 14px; /* Reduzindo o tamanho da fonte dos resultados */
     color: #333;
     margin-top: 20px;
     padding-top: 10px;
@@ -129,27 +138,32 @@ button:hover {
 .discounted-annual-cost-container {
     display: none;
 }
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
 
 body {
     background-image: url('images/fundo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+    background-attachment: fixed; /* Faz a imagem de fundo permanecer fixa enquanto o conteúdo rola */
+    width: 100%; /* Garante que a imagem preencha 100% da largura */
+    height: 100%; /* Garante que a imagem preencha 100% da altura */
 }
 
+
 .footer-info {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+    background-color: 0;
+    color: white;
     padding: 20px;
-    
-    color: white; /* Texto em branco para maior contraste */
-    font-size: 14px;
-    z-index: 10; /* Garante que o texto fique sobre a imagem */
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Garante que o rodapé fique no final da página */
+    font-size: 10px; /* Reduzindo o tamanho do texto do rodapé */
 }
 
 .footer-info p {
@@ -157,7 +171,7 @@ body {
 }
 
 .footer-info a {
-    color: #4CAF50; /* Cor do link para destacar no fundo */
+    color: #4CAF50;
     text-decoration: none;
 }
 
@@ -165,4 +179,19 @@ body {
     text-decoration: underline;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
 
+.container-wrapper {
+    flex: 1;
+}
+
+.footer-info {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
