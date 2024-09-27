@@ -78,7 +78,7 @@
 
 /* Estilo do botão Início */
 #containerCadastro .btn-inicio {
-    background-color: #f44336;
+    background-color: #0a0fa1;
 }
 
 #containerCadastro .btn-inicio:hover {
@@ -123,4 +123,33 @@
     font-size: 12px; /* Adjust to make it readable */
     font-family: Arial, sans-serif;
     line-height: 1.5;
+}
+
+
+.pdf-body {
+    max-width: 180mm; /* 180mm é seguro dentro da largura A4 */
+    width: 100%; /* Força o conteúdo a respeitar a largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+.pdf-table {
+    width: 100%;
+    max-width: 180mm; /* Novamente, mantendo dentro dos limites da página A4 */
+    border-collapse: collapse;
+}
+
+.pdf-table th, .pdf-table td {
+    padding: 5px;
+    font-size: 11px; /* Fontes menores para se ajustar melhor */
+    word-wrap: break-word; /* Permite que o texto se quebre em linhas */
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.form-group input {
+    max-width: 100%; /* Isso força o input a se ajustar ao container */
+    box-sizing: border-box; /* Isso já está configurado, o que é ótimo */
+}
+.pdf-body {
+    font-size: 11px;
 }

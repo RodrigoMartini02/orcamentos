@@ -112,12 +112,12 @@
 }
 
 #containerAmbiental .btn-inicio {
-    background-color: #007bff;
+    background-color: #0a0fa1;
     color: white;
 }
 
 #containerAmbiental .btn-inicio:hover {
-    background-color: #0056b3;
+    background-color: #ee0e15;
 }
 
 /* Alinhamento apenas para container Ambiental */
@@ -136,12 +136,30 @@
     line-height: 1.5;
 }
 
-#containerAmbiental .body {
-    background-image: url('images/Teste\ JPG\ -\ Copia\ \(14\).jpeg');
-    background-size: cover; /* Faz com que a imagem cubra toda a área visível */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita a repetição da imagem */
-    height: 100vh; /* Faz o body ocupar 100% da altura da janela */
-    margin: 0; /* Remove as margens padrão */
-    padding: 0; /* Remove os paddings padrão */
+.pdf-body {
+    max-width: 180mm; /* 180mm é seguro dentro da largura A4 */
+    width: 100%; /* Força o conteúdo a respeitar a largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+.pdf-table {
+    width: 100%;
+    max-width: 180mm; /* Novamente, mantendo dentro dos limites da página A4 */
+    border-collapse: collapse;
+}
+
+.pdf-table th, .pdf-table td {
+    padding: 5px;
+    font-size: 11px; /* Fontes menores para se ajustar melhor */
+    word-wrap: break-word; /* Permite que o texto se quebre em linhas */
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.form-group input {
+    max-width: 100%; /* Isso força o input a se ajustar ao container */
+    box-sizing: border-box; /* Isso já está configurado, o que é ótimo */
+}
+.pdf-body {
+    font-size: 11px;
 }

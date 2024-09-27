@@ -112,12 +112,12 @@
 }
 
 #containerWhats .btn-inicio {
-    background-color: #007bff;
+    background-color: #0a0fa1;
     color: white;
 }
 
 #containerWhats .btn-inicio:hover {
-    background-color: #0056b3;
+    background-color: #ee0e15;
 }
 
 /* Alinhamento apenas para container Whats */
@@ -135,3 +135,4 @@
     font-family: Arial, sans-serif;
     line-height: 1.5;
 }
+
